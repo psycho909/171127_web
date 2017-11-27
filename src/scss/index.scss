@@ -1,0 +1,64 @@
+@import '_reset';
+@import '_mixins';
+
+/*=====================================*/
+
+$bg-purple:purple;
+$brown:brown;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "微软雅黑","Microsoft YaHei",Tahoma,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	
+}
+
+.bg-purple {
+	background-color: $bg-purple;
+}
+
+.text-white {
+	color: #fff;
+}
+.text-center{
+	text-align: center;
+}
+.border {
+	border: 1px solid $brown;
+}
+
+.d-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bets-wrap {
+	&.active{
+		background-color: gold;
+		.ball{
+			color:#fff;
+		}
+	}
+	.bets{
+		font-size: .8rem;
+		font-weight: 900;
+		border-left:none;
+		border-top:none;
+	}
+	.bets:first-child {
+		flex-basis: 40%;
+	}
+	.bets:last-child {
+		flex-basis: 60%;
+	}
+	.bets{
+		&.ball{
+			background-image: url('../images/ball.png');
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+	}
+}
