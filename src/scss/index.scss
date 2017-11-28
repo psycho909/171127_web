@@ -110,10 +110,11 @@ body {
 		// }
 		.tip-box{
 			&.active{
-				height: calc(27px * 4);
+				height: calc( (27px * 4) + 4px);
+				opacity: 1;
 			}
 			width: 50%;
-			opacity: 1;
+			opacity:1;
 			overflow: hidden;
 			position: absolute;
 			top: 0;
@@ -128,6 +129,13 @@ body {
 			.tip{
 				color:#fff;
 				border-bottom:1px solid lighten(#640F0F,15%);
+				border-top: 1px solid rgba(78, 14, 14, 0.8);
+				&:first-child{
+					border-top:none;
+				}
+				&:last-child{
+					border-bottom:none;
+				}
 			}
 		}
 		&.active{

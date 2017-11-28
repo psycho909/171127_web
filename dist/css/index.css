@@ -165,10 +165,16 @@ body {
     -webkit-box-shadow: inset -3px 3px 3px rgba(255, 255, 255, 0.5), inset 0px -3px 3px rgba(255, 255, 255, 0.6), inset 3px 2px 3px rgba(0, 0, 0, 0.4);
             box-shadow: inset -3px 3px 3px rgba(255, 255, 255, 0.5), inset 0px -3px 3px rgba(255, 255, 255, 0.6), inset 3px 2px 3px rgba(0, 0, 0, 0.4); }
     .bets-wrap-row .bets-wrap .tip-box.active {
-      height: calc(27px * 4); }
+      height: calc( (27px * 4) + 4px);
+      opacity: 1; }
     .bets-wrap-row .bets-wrap .tip-box .tip {
       color: #fff;
-      border-bottom: 1px solid #a71919; }
+      border-bottom: 1px solid #a71919;
+      border-top: 1px solid rgba(78, 14, 14, 0.8); }
+      .bets-wrap-row .bets-wrap .tip-box .tip:first-child {
+        border-top: none; }
+      .bets-wrap-row .bets-wrap .tip-box .tip:last-child {
+        border-bottom: none; }
   .bets-wrap-row .bets-wrap.active {
     background-color: #fffce5; }
     .bets-wrap-row .bets-wrap.active .bets:first-child {
