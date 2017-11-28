@@ -322,15 +322,19 @@
 			$(this).closest('.tip-box').removeClass('active')
 		})
 		$('.input').on('change keydown keypress',function(){
-			if(parseInt((this).val()) > 0){
+			if(parseInt($(this).val()) > 0){
 				$(this).closest('.bets-wrap').addClass('active')
-			}else{
+			}else if(parseInt($(this).val()) <= 0){
 				$(this).closest('.bets-wrap').removeClass('active')
 			}
 		})
 		$('.input').on('keyup',function(){
 			var _val=parseInt($(this).val())
-			$(this).val(_val.toFixed(0))
+			if(isNaN(_val)){
+				$(this).val('')
+			}else{
+				$(this).val(_val.toFixed(0))
+			}
 		})
 	</script>
 </body>
