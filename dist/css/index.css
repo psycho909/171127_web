@@ -95,6 +95,9 @@ body {
 .bg-brown {
   background-color: #A69B91; }
 
+.bg-gray {
+  background-color: #F8F8F8; }
+
 .text-white {
   color: #fff; }
 
@@ -102,19 +105,19 @@ body {
   text-align: center; }
 
 .border {
-  border: 1px solid #A69B91; }
+  border: 1px solid #D9D9D9; }
 
 .border-top {
-  border-top: 1px solid #A69B91 !important; }
+  border-top: 1px solid #D9D9D9 !important; }
 
 .border-left {
-  border-left: 1px solid #A69B91 !important; }
+  border-left: 1px solid #D9D9D9 !important; }
 
 .border-bottom {
-  border-bottom: 1px solid #A69B91 !important; }
+  border-bottom: 1px solid #D9D9D9 !important; }
 
 .border-right {
-  border-right: 1px solid #A69B91 !important; }
+  border-right: 1px solid #D9D9D9 !important; }
 
 .input {
   width: 100%; }
@@ -130,30 +133,24 @@ body {
   font-size: .8rem;
   font-weight: 900; }
 
-.bets-wrap-row .bets-row:first-child .col-88:last-child .bets-wrap {
-  border-right: 1px solid #A69B91; }
-
-.bets-wrap-row .bets-row:last-child .bets-wrap {
-  border-top: none; }
-
-.bets-wrap-row .bets-row:last-child .col-88:last-child .bets-wrap {
-  border-right: 1px solid #A69B91; }
+.bets-wrap-row .bets-row:first-child .bets-wrap {
+  border-bottom: none; }
 
 .bets-wrap-row .bets-wrap {
   border-left: none;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #fff; }
   .bets-wrap-row .bets-wrap.active {
     background-color: #FFF5B2; }
     .bets-wrap-row .bets-wrap.active .bets:first-child {
       color: #cc0000; }
     .bets-wrap-row .bets-wrap.active .bets.ball {
-      color: #cc0000;
-      background-color: #FFF5B2; }
+      color: #fff; }
   .bets-wrap-row .bets-wrap .bets {
     font-size: .8rem;
-    font-weight: 900;
-    border-left: none;
-    border-top: none; }
+    font-weight: 900; }
+    .bets-wrap-row .bets-wrap .bets.bets-num {
+      color: #92908D; }
   .bets-wrap-row .bets-wrap .bets:first-child {
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%; }
@@ -165,8 +162,8 @@ body {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%; }
   .bets-wrap-row .bets-wrap .bets.ball {
-    background-image: url("../images/ball.png");
-    background-color: #F9F7F4;
+    background-image: url("../images/ball_0.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 28px; }
+    background-size: 28px;
+    color: #fff; }
